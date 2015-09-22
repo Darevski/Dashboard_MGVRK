@@ -16,7 +16,7 @@ class View
         include 'Application/Views/'.$template_view;
     }
 
-    function display($content_view,$data)
+    function display($content_view,$data = null)
     {
         include 'Application/Views/'.$content_view;
     }
