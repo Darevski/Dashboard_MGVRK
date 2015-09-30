@@ -7,10 +7,11 @@
  */
 ?>
 
-<link rel="stylesheet" type="text/css" href="/css/styles.css" />
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <meta charset="utf-8">
     <title>Главная</title>
 </head>
