@@ -11,9 +11,11 @@ use Application\Core;
 
 class Model_Dashboard extends Core\Model
 {
-
-    function get_professor(){
-
+    /** Возвращает список преподавателей уникальный id + фио + кафедра вывод в виде json строки */
+    function get_professors_list(){
+        $query = "SELECT prof.id,prof.professor,list.depart_name FROM professors as prof,departments_list as list WHERE prof.department_id = list.id";
+        $result=$this->database->getALL($query);
+        return $result;
     }
 
     /**
